@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+</head>
+<body>
+    <h2>Assignment 1</h2>
+    <p>Functions with numbers and strings!!</p>
+  <script>
+    //print assignment name
+    console.log("Assignment 1!");
+    
+    //Function to add 7 to a number
+    function add7(math) {
+        return math + 7
+    }
+    console.log(add7(3));
+
+    //Function to multiply a number by 2
+    function multiply(moremath) {
+        return moremath * 2
+    }
+    console.log(multiply(5));
+    
+    //Function to add capitalize the first letter of word, if its uppercase, lowercase, or both
+    function capitalize(lowercase, uppercase, both) {
+        const capitalizeLower = lowercase.charAt(0).toUpperCase() + lowercase.slice(1).toLowerCase();
+        const capitalizeUpper = uppercase.charAt(0).toUpperCase() + uppercase.slice(1).toLowerCase();
+        const capitalizeBoth = both.charAt(0).toUpperCase() + both.slice(1).toLowerCase();
+        console.log(capitalizeLower, capitalizeUpper , capitalizeBoth)
+        return `${capitalizeLower} ${capitalizeUpper} ${capitalizeBoth}`
+     }
+     capitalize("hello","HELLO","hEllO");
+
+     //Functtion to add get the last letter of a word
+     function lastLetter(word) {
+        const getLastLetter = word.slice(-1);
+        console.log(getLastLetter)
+        return getLastLetter
+     }
+     lastLetter("megan")
+    
+
+</script>
+</body>
+</html> 
